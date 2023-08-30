@@ -1,0 +1,18 @@
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #f364ba;
+    padding: 10%;
+    border: 1px solid #70c6cc;
+    border-radius: 50px;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.Media {
+    position: relative;    
+    font-size: 8rem;
+    color: #e98bc3;
+}

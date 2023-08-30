@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2%;
+    list-style: none;
+}
+
+.links {
+    margin-right: 3em;
+}
+
+.links a{
+    text-decoration: none;
+    color: #f364ba;
+    font-size: 17px;
+}
+
+.links a:hover {
+    color: #f3bfde;
+}
+
+
