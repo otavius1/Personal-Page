@@ -29,7 +29,7 @@ function App() {
             <Social />
           </Route>
         </Switch>
-        {/* <Footer/> */}
+        <Footer/>
       </Router>
     </div>
   );
