@@ -1,0 +1,20 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "description": "Aprendizado de React",
+      "imgAdress": "https://www.google.com/url?sa=i&url=https%3A%2F%2Ficonscout.com%2Ficon%2Freact-1&psig=AOvVaw0b4dVCvwFkR3Wj1XUlPy0Y&ust=1694009269646000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCLiYxZrSk4EDFQAAAAAdAAAAABAE",
+      "imgName": "React",
+      "link": "https://example.com",
+      "linkName": "Link do projeto 1"
+    },
+    {
+      "id": 2,
+      "description": "Another project description",
+      "imgAdress": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fpt.m.wikipedia.org%2Fwiki%2FFicheiro%3AReact-icon.svg&psig=AOvVaw0b4dVCvwFkR3Wj1XUlPy0Y&ust=1694009269646000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCLiYxZrSk4EDFQAAAAAdAAAAABAJ",
+      "imgName": "Image 2",
+      "link": "https://example.com",
+      "linkName": "Link do projeto 2"
+    }
+  ]
+}

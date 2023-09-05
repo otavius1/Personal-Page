@@ -7,66 +7,36 @@ function Projects() {
 
     const [projects, setProjects] = useState([])
 
-    // useEffect (() => {
-    //     fetch('http://localhost')
-    // })
+    useEffect(() => {
+        fetch('http://localhost:5000/projects', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+            .then((resp) => resp.json())
+            .then((data) => {
+                console.log(data)
+                setProjects(data)
+            })
+            .catch((err) => console.log(err))
+    }, [])
 
     return (
         <div className={styles.projects}>
-            <Card
-                title="Projeto teste"
-                description="Projeto teste Projeto teste Projeto teste "
-                imgAdress={logo}
-                imgName="React"
-                link="https://react-icons.github.io/react-icons"
-                linkName="Link do projeto"
-            />
+            {projects.length > 0 &&
+                projects.map((project) => (
+                    <Card
+                        key={project.id}
+                        title={project.description} // Usar a descrição como título
+                        description={project.description}
+                        imgAdress={project.imgAdress}
+                        imgName={project.imgName}
+                        link={project.link}
+                        linkName={project.linkName}
+                    />
 
-            <Card
-                title="Projeto teste 2"
-                description="Projeto teste Projeto teste Projeto teste "
-                imgAdress={logo}
-                imgName="React"
-                link="https://react-icons.github.io/react-icons"
-                linkName="Link do projeto"
-            />
-
-            <Card
-                title="Projeto teste 3"
-                description="Projeto teste Projeto teste Projeto teste "
-                imgAdress={logo}
-                imgName="React"
-                link="https://react-icons.github.io/react-icons"
-                linkName="Link do projeto"
-            />
-
-            <Card
-                title="Projeto teste 4"
-                description="Projeto teste Projeto teste Projeto teste "
-                imgAdress={logo}
-                imgName="React"
-                link="https://react-icons.github.io/react-icons"
-                linkName="Link do projeto"
-            />
-
-            <Card
-                title="Projeto teste 5"
-                description="Projeto teste Projeto teste Projeto teste "
-                imgAdress={logo}
-                imgName="React"
-                link="https://react-icons.github.io/react-icons"
-                linkName="Link do projeto"
-            />
-
-            <Card
-                title="Projeto teste 6"
-                description="Projeto teste Projeto teste Projeto teste "
-                imgAdress={logo}
-                imgName="React"
-                link="https://react-icons.github.io/react-icons"
-                linkName="Link do projeto"
-            />
-            
+                ))}
         </div>
     )
 }
