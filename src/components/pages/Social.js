@@ -1,6 +1,8 @@
 import { SlSocialLinkedin, SlSocialGithub } from "react-icons/sl"
 import { BiLogoGmail } from "react-icons/bi";
 
+import Footer from '../layouts/Footer'
+
 import styles from './Social.module.css'
 
 const Social = () => {

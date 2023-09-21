@@ -1,6 +1,8 @@
 import styles from './Card.module.css'
 
-function Card({ title, description, imgAdress, imgName, link, linkName }) {
+import { AiFillGithub } from "react-icons/ai";
+
+function Card({ title, description, imgAdress, imgName, link }) {
     return (
         <div className={styles.Card}>
             <div>
@@ -9,7 +11,7 @@ function Card({ title, description, imgAdress, imgName, link, linkName }) {
             <div>
                 <p>{description}</p>
                 <img src={imgAdress} alt={imgName} className={styles.imagem}/>
-                <p><a href={link}>{linkName}</a></p>
+                <a href={link} target='_blank' rel="noreferrer" className={styles.link} ><AiFillGithub/></a>
             </div>
         </div>
     )

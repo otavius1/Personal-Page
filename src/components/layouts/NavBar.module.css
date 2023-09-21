@@ -13,11 +13,12 @@
 .links a{
     text-decoration: none;
     color: #f364ba;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 .links a:hover {
     color: #f3bfde;
+    text-decoration: underline;
 }
 
 

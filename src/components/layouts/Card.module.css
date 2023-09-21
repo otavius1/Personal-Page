@@ -24,7 +24,8 @@
 }
 
 .Card h1 {
-    color: #70c6cc;
+    color: #07dae9;
+    font-size: 25px;
     background-color: #f364ba;
     border-radius: 15px 15px 0 0;
     text-align: center;
@@ -32,11 +33,14 @@
 }
 
 .Card a {
+    position: static;
+    margin: 44%;
+    font-size: 30px;
     text-decoration: none;
     color: #f364ba;
     background-color: #d0eef0;
     border: 1px solid #70c6cc;
-    padding: 3px;
+    padding: 5px;
     box-shadow: 1px 1px 0 0 #70c6cc;
     border-radius: 5px;
 }

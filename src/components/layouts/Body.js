@@ -1,6 +1,7 @@
 import perfil from '../../assets/perfil.jpg'
 import styles from './Body.module.css'
 
+
 function Body() {
 
   function getLegenda(nivel) {

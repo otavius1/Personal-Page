@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+
 import Card from '../layouts/Card'
 import styles from '../layouts/Card.module.css'
 import logo from '../../assets/logo512.png'
@@ -28,12 +29,11 @@ function Projects() {
                 projects.map((project) => (
                     <Card
                         key={project.id}
-                        title={project.description} // Usar a descrição como título
+                        title={project.title}
                         description={project.description}
-                        imgAdress={project.imgAdress}
+                        imgAdress={logo}
                         imgName={project.imgName}
                         link={project.link}
-                        linkName={project.linkName}
                     />
 
                 ))}
